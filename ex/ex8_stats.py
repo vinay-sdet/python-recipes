@@ -9,9 +9,9 @@ test_results = {
 def verify_tests(test_results) -> list:
     passed_tests, failed_tests, total_tests = 0, 0, 0
     pass_percentage = 0.00
-    for test_case, results in test_results.items():
+    for test_case, result in test_results.items():
         total_tests += 1
-        if results == "Passed":
+        if result == "Passed":
             passed_tests += 1
         else:
             failed_tests += 1
