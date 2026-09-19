@@ -1,3 +1,12 @@
+# Exercise 3 — Two arrays
+# Create:
+# a = [10, 20, 30, 40]
+# b = [1, 2, 3, 4]
+# Using NumPy, calculate:
+# a + b
+# a - b
+# a * b
+
 import numpy as np
 
 arr1 = np.array([10, 20, 30])
