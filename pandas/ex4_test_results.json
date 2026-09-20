@@ -1,0 +1,5 @@
+{"Test Case":"Login","Status":"Passed","Browser":"Chrome","Duration":10}
+{"Test Case":"Search","Status":"Failed","Browser":"Firefox","Duration":15}
+{"Test Case":"Checkout","Status":"Passed","Browser":"Chrome","Duration":20}
+{"Test Case":"Logout","Status":"Failed","Browser":"Edge","Duration":8}
+{"Test Case":"Profile","Status":"Passed","Browser":"Chrome","Duration":12}

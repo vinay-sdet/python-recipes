@@ -1,0 +1,6 @@
+Test Case,Status,Browser,Duration
+Login,Passed,Chrome,10
+Search,Failed,Firefox,15
+Checkout,Passed,Chrome,20
+Logout,Failed,Edge,8
+Profile,Passed,Chrome,12
