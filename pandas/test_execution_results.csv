@@ -1,0 +1,8 @@
+Test Case,Status,Browser,Duration,Priority
+Login,Passed,Chrome,10,High
+Search,Failed,Firefox,15,Medium
+Checkout,Passed,Chrome,20,High
+Logout,Failed,Edge,8,Low
+Profile,Passed,Chrome,12,Medium
+Settings,Failed,Chrome,18,High
+Reports,Passed,Firefox,25,Low
