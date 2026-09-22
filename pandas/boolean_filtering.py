@@ -10,6 +10,7 @@ df = pd.DataFrame(data)
 # Failed test cases
 failed_testcases = df[df["Status"] == "Failed"]
 print("Failed Test Cases:\n", failed_testcases)
+
 # Chrome test cases
 chrome_tests = df[df["Browser"] == "Chrome"]
 print("Chrome Test Cases:\n", chrome_tests)

@@ -69,7 +69,7 @@ header.fill.solid()
 header.fill.fore_color.rgb = RGBColor(24, 49, 77)
 header.line.fill.background()
 
-add_text(slide, "Python Learning Progress", 0.62, 0.35, 8.7, 0.5, 27,
+add_text(slide, "My Learning Journey in Python for AI", 0.62, 0.35, 10.8, 0.5, 25,
          (255, 255, 255), True, font="Aptos Display")
 add_text(slide, "From first scripts to the building blocks of AI", 0.65, 0.91, 8.4, 0.25,
          12.5, (191, 211, 229))
@@ -82,26 +82,20 @@ cards = [
     (0.62, 1.88, 3.85, 1.62, "01", "Core syntax", "Printed output, variables,\nstrings, numbers, and type hints.", (34, 137, 160)),
     (4.74, 1.88, 3.85, 1.62, "02", "Input + decisions", "Collected user input and used\ncomparisons with if / elif / else.", (232, 126, 67)),
     (8.86, 1.88, 3.85, 1.62, "03", "Loops + data", "Used lists with for and while\nloops to repeat useful work.", (92, 143, 94)),
-    (0.62, 3.82, 3.85, 1.62, "04", "Functions + math", "Created reusable functions with\nparameters, returns, and math.sqrt().", (119, 92, 157)),
-    (4.74, 3.82, 3.85, 1.62, "05", "Handling errors", "Used try / except to catch a\nTypeError and continue execution.", (191, 92, 87)),
+    (0.62, 3.82, 3.85, 1.62, "04", "JSON + CSV", "Worked with structured JSON data\nand CSV-inspired tabular records.", (78, 112, 190)),
+    (4.74, 3.82, 3.85, 1.62, "05", "NumPy arrays", "Used vectorized operations for\nmath, arrays, and ML-ready data.", (164, 110, 62)),
+    (8.86, 3.82, 3.85, 1.62, "06", "Pandas analysis", "Filtered, sorted, and summarized\nDataFrames for real data tasks.", (71, 128, 77)),
 ]
 
 for card in cards:
     add_card(slide, *card)
 
-callout = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(8.86), Inches(3.82), Inches(3.85), Inches(1.62))
-callout.fill.solid()
-callout.fill.fore_color.rgb = RGBColor(229, 239, 244)
-callout.line.fill.background()
-add_text(slide, "READY FOR THE NEXT STEP", 9.15, 4.12, 3.20, 0.25, 11, (24, 91, 111), True)
-add_text(slide, "Combine these foundations\nwith data and AI libraries.", 9.15, 4.47, 3.15, 0.55, 15, (24, 49, 77), True)
-
 footer = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, Inches(6.78), Inches(13.333), Inches(0.72))
 footer.fill.solid()
 footer.fill.fore_color.rgb = RGBColor(224, 231, 238)
 footer.line.fill.background()
-add_text(slide, "Evidence in practice: conditional.py  |  loops.py  |  fun-sum.py  |  math_example.py  |  exception_handling.py",
-         0.65, 7.00, 12.1, 0.22, 10, (65, 80, 96))
+add_text(slide, "Evidence in practice: conditional.py  |  loops.py  |  json_ex.py  |  numpy_basics.py  |  csv_&_json.py  |  boolean_filtering.py",
+         0.65, 7.00, 12.1, 0.22, 9.5, (65, 80, 96))
 
 presentation.save(OUTPUT)
 print(OUTPUT)

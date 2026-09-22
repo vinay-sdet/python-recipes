@@ -74,6 +74,7 @@ This folder introduces tabular data handling with pandas.
 Included files:
 - dataframe_pandas.py — creating a DataFrame from a dictionary and printing it
 - boolean_filtering.py — filtering rows by column values, sorting, and summary statistics
+- ex5_pandas.py — identifying missing values, filling missing status values with "Unknown", and replacing missing durations with the mean duration
 
 ## Suggested learning path
 
@@ -98,6 +99,7 @@ python json_/json_ex.py
 python numpy/numpy_basics.py
 python pandas/dataframe_pandas.py
 python pandas/boolean_filtering.py
+python pandas/ex5_pandas.py
 ```
 
 ## Running in VS Code
