@@ -1,34 +1,34 @@
-# Python Recipes
+﻿# Python Recipes
 
-A hands-on Python learning workspace for fundamentals, data processing, and introductory data analysis.
+A hands-on Python learning repository focused on fundamentals, data structures, JSON handling, NumPy, and pandas.
 
 ## Overview
 
-This repository is organized as a collection of small practice scripts and examples covering:
+This project is a collection of small scripts and exercises designed to build practical Python skills step by step. It covers:
 
 - Python basics: variables, operators, loops, conditionals, functions, and strings
 - data structures: lists, dictionaries, and nested data
 - exception handling and debugging
-- JSON parsing and structured data handling
-- NumPy array operations and broadcasting
-- pandas DataFrames, filtering, CSV/JSON work, and result analysis
+- reading and processing JSON data
+- NumPy arrays, broadcasting, and basic numeric operations
+- pandas DataFrames, filtering, CSV/JSON examples, and data exploration
 
 ## Project structure
 
 ```text
 python-recipes/
 ├── README.md
-├── .venv/                     # local virtual environment
-├── json_/                    # JSON examples and sample data
+├── .venv/                               # local virtual environment
+├── json_/                               # JSON examples and sample datasets
 │   ├── emp.json
 │   ├── json_ex.py
 │   └── josn_reader.py
-├── numpy/                    # NumPy practice files
+├── numpy/                               # NumPy exercises
 │   ├── array_operations.py
 │   ├── broadcasting_2d_array.py
 │   ├── ex1_ex2_numpy.py
 │   └── numpy_basics.py
-├── pandas/                   # pandas exercises and datasets
+├── pandas/                              # pandas exercises and CSV/JSON files
 │   ├── boolean_filtering.py
 │   ├── csv_&_json.py
 │   ├── dataframe_pandas.py
@@ -41,7 +41,7 @@ python-recipes/
 │   ├── test_execution_results.csv
 │   ├── test_results.csv
 │   └── ...
-├── py_fundamentals/          # beginner-level Python exercises
+├── py_fundamentals/                      # beginner Python practice
 │   ├── conditional.py
 │   ├── data_types_guide.py
 │   ├── exception_handling.py
@@ -50,6 +50,7 @@ python-recipes/
 │   ├── lists_ex.py
 │   ├── loops.py
 │   ├── math_example.py
+│   ├── number_2_exploration.ipynb
 │   ├── operators.py
 │   ├── strings_ex.py
 │   ├── ex/
@@ -59,15 +60,15 @@ python-recipes/
 
 ## Suggested learning order
 
-1. Start with the scripts in `py_fundamentals/`
-2. Practice conditionals, loops, and data types
-3. Explore JSON and nested data structures
+1. Start with the fundamentals in `py_fundamentals/`
+2. Practice conditionals, loops, and basic data types
+3. Explore JSON and nested data handling
 4. Move into NumPy for numeric and array operations
-5. Use pandas for DataFrames, filtering, and tabular datasets
+5. Use pandas for DataFrames, filtering, and tabular data analysis
 
-## Running scripts
+## Quick start
 
-From the project root, use Python to run any script:
+From the project root, run a script with Python:
 
 ```bash
 python py_fundamentals/first.py
@@ -81,7 +82,7 @@ python pandas/boolean_filtering.py
 
 ## Virtual environment setup
 
-This repository includes a local environment in `.venv`.
+This project includes a local virtual environment in `.venv`.
 
 ### Windows PowerShell
 
@@ -91,7 +92,7 @@ cd D:\neova-ai-lab\python-recipes
 .\.venv\Scripts\python.exe -m pip install pandas numpy
 ```
 
-Then run a script with the project environment:
+Then run scripts using the project environment:
 
 ```powershell
 .\.venv\Scripts\python.exe pandas\dataframe_pandas.py
@@ -107,19 +108,19 @@ df = pd.read_csv("pandas/test_execution_results.csv")
 print(df.head())
 ```
 
-This prints the first few rows of the DataFrame for quick inspection.
+This prints the first few rows from a DataFrame for quick inspection.
 
 ## Notes
 
-This project is designed for learning by doing. The exercises are intentionally compact so that each concept stays easy to understand and easy to test.
+This repository is intended for learning by doing. The exercises are compact and focused so each concept stays easy to understand and easy to test.
 
 ## Next ideas
 
-After the basics, useful next steps include:
+After covering the basics, useful next steps include:
 
 - reusable functions and modular scripts
 - file handling and CSV processing
 - data cleaning and transformation
-- APIs and external data sources
-- more advanced pandas analysis
-- data science and machine learning workflows
+- API-based data retrieval
+- more advanced pandas workflows
+- data science and machine learning projects
