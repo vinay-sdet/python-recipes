@@ -6,8 +6,17 @@ print("First 5 rows\n", df.head(5))
 print("Shape - ", df.shape)
 print("Column Names\n", df.columns.tolist())
 print("Dataframe information\n", df.info())
+# another way
+df.info()
 
 print("\nMissing values\n", df.isnull().sum())
 print("\nData types\n", df.dtypes)
 print("\nSummary statistics\n", df.describe())
 print("\nLast 5 rows\n", df.tail(5))
+
+# Sort rows
+print(df.sort_values("Browser", ascending=True))
+
+# Summarize numeric data
+print(df.mean(numeric_only=True))
+print(df.corr(numeric_only=True))
