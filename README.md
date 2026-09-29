@@ -99,16 +99,36 @@ Then run scripts using the project environment:
 .\.venv\Scripts\python.exe pandas\boolean_filtering.py
 ```
 
-## Example
+## Pandas data exploration
 
 ```python
 import pandas as pd
 
 df = pd.read_csv("pandas/test_execution_results.csv")
+
+# Preview and inspect the dataset
 print(df.head())
+print("Shape:", df.shape)
+print("Columns:", df.columns.tolist())
+df.info()  # info() prints its report and returns None
+
+# Summarize values and numeric data
+print(df["Status"].value_counts())
+print(df["Priority"].value_counts())
+print(df["Duration"].describe())
+
+# Filter, sort, and group rows
+failed_tests = df[df["Status"] == "Failed"]
+print(failed_tests)
+print(df.sort_values("Duration", ascending=False))
+print(df.groupby("Status")["Duration"].mean())
+
+# Check data quality
+print("Missing values:\n", df.isna().sum())
+print("Duplicate rows:", df.duplicated().sum())
 ```
 
-This prints the first few rows from a DataFrame for quick inspection.
+Run `python pandas/test_execution.py` from the project root to try these operations on the sample test-execution data. Use `df.loc[...]` to select by labels and `df.iloc[...]` to select by row or column position. After cleaning or transforming data, save it with `df.to_csv("pandas/cleaned_results.csv", index=False)`.
 
 ## Notes
 
