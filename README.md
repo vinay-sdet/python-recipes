@@ -1,6 +1,6 @@
 # Python Recipes
 
-A hands-on Python practice repository for learning the fundamentals of programming, working with JSON data, and exploring data with NumPy and pandas.
+A hands-on Python practice repository for learning the fundamentals of programming, working with JSON data, and exploring data with NumPy and pandas
 
 ## Overview
 
