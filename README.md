@@ -161,7 +161,7 @@ Related scripts:
 
 ## Notes
 
-The exercises are intentionally compact. Each file focuses on one idea so it stays easy to read and easy to rerun.
+The exercises are intentionally compact. Each file focuses on one idea so it stays easy to read and easy to rerun
 
 ## Next ideas
 
