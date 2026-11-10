@@ -1,101 +1,116 @@
 # Python Recipes
 
-A hands-on Python practice repository for learning the fundamentals of programming, working with JSON data, and exploring data with NumPy and pandas.
+A practical Python learning repository focused on fundamentals, file handling, JSON data, NumPy arrays, and pandas-based data analysis.
 
 ## Overview
 
-This repository is a collection of small exercises and scripts used to build practical Python skills step by step. It is designed for beginners who want to move from basic syntax to simple data analysis workflows.
+This project is a small collection of exercises and scripts designed to help build confidence with Python from the basics to simple data-processing workflows. The examples are intentionally compact, easy to run, and centered around real-world patterns like reading files, filtering results, and exploring tabular data.
 
-Most examples use test-execution data (test case, status, browser, duration) so the same ideas show up again as the scripts get more capable.
+The repository follows a progressive learning flow:
 
-Topics covered include:
-
-- Python basics: variables, operators, loops, conditionals, strings, and functions
+- Python basics: variables, operators, conditions, loops, strings, and functions
 - Data structures: lists, dictionaries, tuples, sets, and nested data
-- Exception handling
-- Reading and writing JSON data
-- NumPy arrays, vectorized math, and broadcasting
-- pandas DataFrames, CSV/JSON I/O, filtering, sorting, and missing values
+- Exception handling and input-driven scripts
+- JSON reading/writing and nested object processing
+- NumPy arrays, arithmetic, and broadcasting
+- pandas DataFrames, CSV/JSON operations, filtering, and cleanup
 
 ## Repository structure
 
 ```text
 python-recipes/
 ├── README.md
-├── python_learning_progress.pptx          # generated progress slide
-├── .venv/                                 # local virtual environment
+├── python_learning_progress.pptx          # presentation of learning progress
+├── .venv/                                 # local virtual environment (if present)
 ├── json_/
 │   ├── emp.json
-│   ├── json_ex.py                         # dict → JSON string
-│   └── josn_reader.py                     # load emp.json and print fields
+│   ├── json_ex.py                         # create and print JSON-formatted data
+│   └── josn_reader.py                     # read JSON and print selected fields
 ├── numpy/
-│   ├── numpy_basics.py                    # element-wise +, -, *, /
-│   ├── ex1_ex2_numpy.py                   # create an array and scale it
-│   ├── array_operations.py                # add, subtract, and multiply two arrays
-│   └── broadcasting_2d_array.py           # scalar and 2D broadcasting
+│   ├── array_operations.py                # arithmetic on arrays
+│   ├── broadcasting_2d_array.py          # broadcasting examples with 2D arrays
+│   ├── ex1_ex2_numpy.py                  # basic array creation and scaling
+│   └── numpy_basics.py                   # common NumPy operations and syntax
 ├── pandas/
-│   ├── dataframe_pandas.py                # build a DataFrame and select rows
-│   ├── boolean_filtering.py               # filter, sort, and select columns
-│   ├── csv_&_json.py                      # read test_results.csv
-│   ├── ex1&4_pandas.py                    # write CSV and JSON, then read JSON back
-│   ├── ex2&3_pandas.py                    # read the CSV and filter slow failures
-│   ├── ex5_pandas.py                      # fill missing status and duration
-│   ├── test_execution.py                  # explore test_execution_results.csv
-│   ├── ex1_test_results.csv
-│   ├── ex4_test_results.json
-│   ├── test_execution_results.csv
-│   └── test_results.csv
-└── py_fundamentals/
-    ├── first.py                           # hello world
-    ├── data_types_guide.py                # str, int, float, bool, list, dict, and more
-    ├── operators.py                       # comparison operators from user input
-    ├── conditional.py                     # simple text bot
-    ├── loops.py                           # for and while over a name list
-    ├── lists_ex.py                        # list length and indexing
-    ├── strings_ex.py                      # len, isalnum, isalpha
-    ├── fun-sum.py                         # a typed add function
-    ├── math_example.py                    # square root with the math module
-    ├── exception_handling.py              # try/except around a TypeError
-    ├── number_2_exploration.ipynb
-    ├── ex/                                # numbered practice exercises
-    └── temp/
-        └── create_learning_progress_slide.py
+│   ├── boolean_filtering.py               # filter, sort, and select meaningful rows
+│   ├── csv_&_json.py                      # CSV/JSON read examples
+│   ├── dataframe_pandas.py                # create and inspect a DataFrame
+│   ├── ex1&4_pandas.py                    # write CSV and JSON outputs
+│   ├── ex2&3_pandas.py                    # filter results based on conditions
+│   ├── ex5_pandas.py                      # fill missing values with defaults
+│   ├── ex1_test_results.csv              # sample output file from a pandas exercise
+│   ├── ex4_test_results.json             # JSON output created in a practice script
+│   ├── test_execution.py                 # explore execution results dataset
+│   ├── test_execution_results.csv       # dataset for execution analysis
+│   ├── test_results.csv                  # sample results used across exercises
+│   └── test_results.json                 # additional JSON-based sample data
+├── py_fundamentals/
+│   ├── first.py                           # basic script entry point
+│   ├── data_types_guide.py                # overview of common Python types
+│   ├── conditional.py                     # input-driven condition examples
+│   ├── exception_handling.py              # try/except usage
+│   ├── fun-sum.py                         # simple function example
+│   ├── lists_ex.py                        # list indexing and operations
+│   ├── loops.py                           # for/while loop practice
+│   ├── math_example.py                    # math module example
+│   ├── operators.py                       # arithmetic and comparison operators
+│   ├── strings_ex.py                     # string methods and checks
+│   ├── number_2_exploration.ipynb        # notebook exploration
+│   ├── ex/
+│   │   ├── ex1.py
+│   │   ├── ex2.py
+│   │   ├── ex3.py
+│   │   ├── ex4_data_types_ex.py
+│   │   ├── ex5_list_loop.py
+│   │   ├── ex6_dict_loop_condition.py
+│   │   ├── ex7_fn_list.py
+│   │   ├── ex8_stats.py
+│   │   ├── ex9.py
+│   │   ├── ex10_nested_data.py
+│   │   ├── ex11_nested_data.py
+│   │   ├── ex12_nested_data.py
+│   │   ├── nested-data.py
+│   │   └── temp/
+│   │       └── create_learning_progress_slide.py
+│   └── temp/
+│       └── create_learning_progress_slide.py
+└── python_learning_progress.pptx
 ```
 
 ## Suggested learning path
 
-1. Start with the fundamentals in `py_fundamentals/`
-2. Work through the numbered exercises in `py_fundamentals/ex/`
-3. Practice JSON handling in `json_/` and nested data in `py_fundamentals/ex/`
-4. Work through the NumPy scripts in order: basics, then exercises 1–4
-5. Use pandas for DataFrames, file I/O, filtering, and cleaning
+1. Start with the basics in `py_fundamentals/`
+2. Practice the numbered exercises in `py_fundamentals/ex/`
+3. Work with JSON data in `json_/`
+4. Explore NumPy in `numpy/`
+5. Move into pandas for data analysis in `pandas/`
 
-Run scripts from the project root. Several files open data with paths such as `pandas/test_results.csv` and `json_/emp.json`, which only resolve from that directory.
+Run scripts from the repository root so relative paths like `pandas/test_results.csv` and `json_/emp.json` resolve correctly.
 
 ## Fundamentals exercises
 
-| Script | What it practices |
+| Script | Learning focus |
 | --- | --- |
-| `ex/ex1.py` | Variable types with `type()` |
-| `ex/ex2.py` | `input()` and an age check |
-| `ex/ex3.py` | `for` and `while` over a language list |
-| `ex/ex4_data_types_ex.py` | List, tuple, set, and dictionary behavior |
-| `ex/ex5_list_loop.py` | Loop a test-case list by value and by index |
-| `ex/ex6_dict_loop_condition.py` | Loop a results dict and print failures |
-| `ex/ex7_fn_list.py` | Return the passed test names from a dict |
-| `ex/ex8_stats.py` | Count passed, failed, and pass percentage |
-| `ex/ex9.py` | Find the largest number in a list |
-| `ex/nested-data.py` | Nested dicts and lists |
-| `ex/ex10_nested_data.py` | Read fields from a nested employee dict |
-| `ex/ex11_nested_data.py` | Print only the failed test from a list of dicts |
-| `ex/ex12_nested_data.py` | `json.dumps()` and `json.loads()` |
+| `py_fundamentals/ex/ex1.py` | Basic variable types with `type()` |
+| `py_fundamentals/ex/ex2.py` | `input()` and comparison logic |
+| `py_fundamentals/ex/ex3.py` | `for` and `while` loop patterns |
+| `py_fundamentals/ex/ex4_data_types_ex.py` | Lists, tuples, sets, and dictionaries |
+| `py_fundamentals/ex/ex5_list_loop.py` | Looping items by value and index |
+| `py_fundamentals/ex/ex6_dict_loop_condition.py` | Filtering dictionary-based results |
+| `py_fundamentals/ex/ex7_fn_list.py` | Functions returning selected values |
+| `py_fundamentals/ex/ex8_stats.py` | Pass/fail counts and percentages |
+| `py_fundamentals/ex/ex9.py` | Finding maximum values in a list |
+| `py_fundamentals/ex/nested-data.py` | Nested structures and lists of dictionaries |
+| `py_fundamentals/ex/ex10_nested_data.py` | Reading fields from nested JSON-like data |
+| `py_fundamentals/ex/ex11_nested_data.py` | Printing failed cases from structured data |
+| `py_fundamentals/ex/ex12_nested_data.py` | `json.dumps()` and `json.loads()` |
 
 ## Prerequisites
 
 - Python 3.x
-- A virtual environment (this workspace already has `.venv`)
-- `numpy` and `pandas` for the data scripts
-- `python-pptx` only if you regenerate `python_learning_progress.pptx`
+- A virtual environment for package management (`.venv` is recommended)
+- `numpy` and `pandas` for the data-analysis scripts
+- `python-pptx` only if you want to regenerate the slide deck
 
 ## Quick start
 
@@ -113,7 +128,7 @@ python pandas/dataframe_pandas.py
 python pandas/boolean_filtering.py
 ```
 
-`operators.py`, `conditional.py`, `ex/ex2.py`, and `math_example.py` wait for keyboard input.
+Some scripts such as `operators.py`, `conditional.py`, `py_fundamentals/ex/ex2.py`, and `math_example.py` wait for keyboard input.
 
 ## Virtual environment setup
 
@@ -133,9 +148,15 @@ Then run scripts with that interpreter:
 .\.venv\Scripts\python.exe json_\josn_reader.py
 ```
 
+If `.venv` does not exist yet, create it first with:
+
+```powershell
+python -m venv .venv
+```
+
 ## Example: pandas data exploration
 
-`pandas/test_execution.py` loads `pandas/test_execution_results.csv` and prints the shape, columns, missing values, dtypes, summary stats, and a sort by browser:
+`pandas/test_execution.py` loads `pandas/test_execution_results.csv` and prints the dataset shape, columns, missing values, dtypes, summary statistics, and sorted output by browser:
 
 ```python
 import pandas as pd
@@ -156,20 +177,20 @@ Related scripts:
 
 - `pandas/boolean_filtering.py` keeps failed rows, Chrome rows, and rows that passed on Chrome, then sorts by duration
 - `pandas/ex1&4_pandas.py` writes `ex1_test_results.csv` and `ex4_test_results.json`
-- `pandas/ex2&3_pandas.py` reads that CSV and keeps failures with duration of 10 or more
-- `pandas/ex5_pandas.py` fills a missing status with `"Unknown"` and a missing duration with the column mean
+- `pandas/ex2&3_pandas.py` reads the CSV and keeps failures with duration of 10 or more
+- `pandas/ex5_pandas.py` fills missing status values with `"Unknown"` and missing durations with the column mean
 
 ## Notes
 
-The exercises are intentionally compact. Each file focuses on one idea so it stays easy to read and easy to rerun
+The exercises are intentionally short and focused so each file stays easy to understand, rerun, and extend. They are designed to support learning by repetition and by gradually increasing complexity.
 
 ## Next ideas
 
-After the current scripts, useful next steps include:
+After completing the current exercises, useful next steps include:
 
-- reusable functions and modular scripts
-- more file handling and CSV processing
-- data cleaning and transformation
+- writing reusable functions and helper modules
+- more file handling and CSV/JSON processing
+- data cleaning and transformation workflows
 - API-based data retrieval
-- more advanced pandas workflows
+- more advanced pandas analysis
 - data science and machine learning projects
