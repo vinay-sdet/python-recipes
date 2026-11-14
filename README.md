@@ -1,61 +1,60 @@
 # Python Recipes
 
-A practical Python learning repository focused on fundamentals, file handling, JSON data, NumPy arrays, and pandas-based data analysis.
+A practical Python learning repository covering the essentials of Python programming, data handling, NumPy, and pandas-based analysis.
 
 ## Overview
 
-This project is a small collection of exercises and scripts designed to help build confidence with Python from the basics to simple data-processing workflows. The examples are intentionally compact, easy to run, and centered around real-world patterns like reading files, filtering results, and exploring tabular data.
+This repository is a collection of small, focused exercises and scripts designed to help build confidence in Python from the basics through simple data-processing workflows. The examples are intentionally compact and easy to run, making them useful for learning by repetition and gradual progression.
 
-The repository follows a progressive learning flow:
+The learning flow in this project follows a practical path:
 
-- Python basics: variables, operators, conditions, loops, strings, and functions
-- Data structures: lists, dictionaries, tuples, sets, and nested data
+- Python fundamentals: variables, operators, conditions, loops, strings, and functions
+- Data structures: lists, dictionaries, tuples, sets, and nested objects
 - Exception handling and input-driven scripts
-- JSON reading/writing and nested object processing
-- NumPy arrays, arithmetic, and broadcasting
-- pandas DataFrames, CSV/JSON operations, filtering, and cleanup
+- JSON handling and file processing
+- NumPy arrays and broadcasting
+- pandas DataFrames, CSV/JSON work, filtering, and cleanup
 
 ## Repository structure
 
 ```text
 python-recipes/
 ├── README.md
-├── python_learning_progress.pptx          # presentation of learning progress
-├── .venv/                                 # local virtual environment (if present)
+├── python_learning_progress.pptx
+├── .venv/
 ├── json_/
 │   ├── emp.json
-│   ├── json_ex.py                         # create and print JSON-formatted data
-│   └── josn_reader.py                     # read JSON and print selected fields
+│   ├── json_ex.py
+│   └── josn_reader.py
 ├── numpy/
-│   ├── array_operations.py                # arithmetic on arrays
-│   ├── broadcasting_2d_array.py          # broadcasting examples with 2D arrays
-│   ├── ex1_ex2_numpy.py                  # basic array creation and scaling
-│   └── numpy_basics.py                   # common NumPy operations and syntax
+│   ├── array_operations.py
+│   ├── broadcasting_2d_array.py
+│   ├── ex1_ex2_numpy.py
+│   └── numpy_basics.py
 ├── pandas/
-│   ├── boolean_filtering.py               # filter, sort, and select meaningful rows
-│   ├── csv_&_json.py                      # CSV/JSON read examples
-│   ├── dataframe_pandas.py                # create and inspect a DataFrame
-│   ├── ex1&4_pandas.py                    # write CSV and JSON outputs
-│   ├── ex2&3_pandas.py                    # filter results based on conditions
-│   ├── ex5_pandas.py                      # fill missing values with defaults
-│   ├── ex1_test_results.csv              # sample output file from a pandas exercise
-│   ├── ex4_test_results.json             # JSON output created in a practice script
-│   ├── test_execution.py                 # explore execution results dataset
-│   ├── test_execution_results.csv       # dataset for execution analysis
-│   ├── test_results.csv                  # sample results used across exercises
-│   └── test_results.json                 # additional JSON-based sample data
+│   ├── boolean_filtering.py
+│   ├── csv_&_json.py
+│   ├── dataframe_pandas.py
+│   ├── ex1&4_pandas.py
+│   ├── ex1_test_results.csv
+│   ├── ex2&3_pandas.py
+│   ├── ex4_test_results.json
+│   ├── ex5_pandas.py
+│   ├── test_execution.py
+│   ├── test_execution_results.csv
+│   └── test_results.csv
 ├── py_fundamentals/
-│   ├── first.py                           # basic script entry point
-│   ├── data_types_guide.py                # overview of common Python types
-│   ├── conditional.py                     # input-driven condition examples
-│   ├── exception_handling.py              # try/except usage
-│   ├── fun-sum.py                         # simple function example
-│   ├── lists_ex.py                        # list indexing and operations
-│   ├── loops.py                           # for/while loop practice
-│   ├── math_example.py                    # math module example
-│   ├── operators.py                       # arithmetic and comparison operators
-│   ├── strings_ex.py                     # string methods and checks
-│   ├── number_2_exploration.ipynb        # notebook exploration
+│   ├── conditional.py
+│   ├── data_types_guide.py
+│   ├── exception_handling.py
+│   ├── first.py
+│   ├── fun-sum.py
+│   ├── lists_ex.py
+│   ├── loops.py
+│   ├── math_example.py
+│   ├── number_2_exploration.ipynb
+│   ├── operators.py
+│   ├── strings_ex.py
 │   ├── ex/
 │   │   ├── ex1.py
 │   │   ├── ex2.py
@@ -69,9 +68,7 @@ python-recipes/
 │   │   ├── ex10_nested_data.py
 │   │   ├── ex11_nested_data.py
 │   │   ├── ex12_nested_data.py
-│   │   ├── nested-data.py
-│   │   └── temp/
-│   │       └── create_learning_progress_slide.py
+│   │   └── nested-data.py
 │   └── temp/
 │       └── create_learning_progress_slide.py
 └── python_learning_progress.pptx
@@ -81,11 +78,55 @@ python-recipes/
 
 1. Start with the basics in `py_fundamentals/`
 2. Practice the numbered exercises in `py_fundamentals/ex/`
-3. Work with JSON data in `json_/`
+3. Work with JSON files in `json_/`
 4. Explore NumPy in `numpy/`
 5. Move into pandas for data analysis in `pandas/`
 
-Run scripts from the repository root so relative paths like `pandas/test_results.csv` and `json_/emp.json` resolve correctly.
+Run scripts from the repository root so relative paths resolve correctly.
+
+## Prerequisites
+
+- Python 3.x
+- A virtual environment (recommended: `.venv`)
+- `numpy` and `pandas` for data-focused scripts
+- `python-pptx` only if you want to regenerate the slide deck
+
+## Quick start
+
+From the project root, you can run the scripts directly:
+
+```bash
+python py_fundamentals/first.py
+python py_fundamentals/conditional.py
+python py_fundamentals/loops.py
+python py_fundamentals/ex/ex6_dict_loop_condition.py
+python json_/json_ex.py
+python json_/josn_reader.py
+python numpy/numpy_basics.py
+python pandas/dataframe_pandas.py
+python pandas/boolean_filtering.py
+```
+
+Some scripts, such as `operators.py`, `conditional.py`, `py_fundamentals/ex/ex2.py`, and `math_example.py`, wait for keyboard input.
+
+## Virtual environment setup
+
+### Windows PowerShell
+
+```powershell
+cd D:\neova-ai-lab\python-recipes
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
+.\.venv\Scripts\python.exe -m pip install pandas numpy
+```
+
+Then run scripts with the virtual environment interpreter:
+
+```powershell
+.\.venv\Scripts\python.exe pandas\dataframe_pandas.py
+.\.venv\Scripts\python.exe pandas\boolean_filtering.py
+.\.venv\Scripts\python.exe json_\josn_reader.py
+```
 
 ## Fundamentals exercises
 
@@ -101,62 +142,13 @@ Run scripts from the repository root so relative paths like `pandas/test_results
 | `py_fundamentals/ex/ex8_stats.py` | Pass/fail counts and percentages |
 | `py_fundamentals/ex/ex9.py` | Finding maximum values in a list |
 | `py_fundamentals/ex/nested-data.py` | Nested structures and lists of dictionaries |
-| `py_fundamentals/ex/ex10_nested_data.py` | Reading fields from nested JSON-like data |
+| `py_fundamentals/ex/ex10_nested_data.py` | Reading fields from nested JSON-like structures |
 | `py_fundamentals/ex/ex11_nested_data.py` | Printing failed cases from structured data |
 | `py_fundamentals/ex/ex12_nested_data.py` | `json.dumps()` and `json.loads()` |
 
-## Prerequisites
-
-- Python 3.x
-- A virtual environment for package management (`.venv` is recommended)
-- `numpy` and `pandas` for the data-analysis scripts
-- `python-pptx` only if you want to regenerate the slide deck
-
-## Quick start
-
-From the project root:
-
-```bash
-python py_fundamentals/first.py
-python py_fundamentals/conditional.py
-python py_fundamentals/loops.py
-python py_fundamentals/ex/ex6_dict_loop_condition.py
-python json_/json_ex.py
-python json_/josn_reader.py
-python numpy/numpy_basics.py
-python pandas/dataframe_pandas.py
-python pandas/boolean_filtering.py
-```
-
-Some scripts such as `operators.py`, `conditional.py`, `py_fundamentals/ex/ex2.py`, and `math_example.py` wait for keyboard input.
-
-## Virtual environment setup
-
-### Windows PowerShell
-
-```powershell
-cd D:\neova-ai-lab\python-recipes
-.\.venv\Scripts\python.exe -m pip install --upgrade pip
-.\.venv\Scripts\python.exe -m pip install pandas numpy
-```
-
-Then run scripts with that interpreter:
-
-```powershell
-.\.venv\Scripts\python.exe pandas\dataframe_pandas.py
-.\.venv\Scripts\python.exe pandas\boolean_filtering.py
-.\.venv\Scripts\python.exe json_\josn_reader.py
-```
-
-If `.venv` does not exist yet, create it first with:
-
-```powershell
-python -m venv .venv
-```
-
 ## Example: pandas data exploration
 
-`pandas/test_execution.py` loads `pandas/test_execution_results.csv` and prints the dataset shape, columns, missing values, dtypes, summary statistics, and sorted output by browser:
+`pandas/test_execution.py` loads `pandas/test_execution_results.csv` and prints the shape, column names, missing values, dtypes, summary statistics, and a sorted view by browser.
 
 ```python
 import pandas as pd
@@ -177,7 +169,7 @@ Related scripts:
 
 - `pandas/boolean_filtering.py` keeps failed rows, Chrome rows, and rows that passed on Chrome, then sorts by duration
 - `pandas/ex1&4_pandas.py` writes `ex1_test_results.csv` and `ex4_test_results.json`
-- `pandas/ex2&3_pandas.py` reads the CSV and keeps failures with duration of 10 or more
+- `pandas/ex2&3_pandas.py` reads the CSV and keeps failures with a duration of 10 or more
 - `pandas/ex5_pandas.py` fills missing status values with `"Unknown"` and missing durations with the column mean
 
 ## Notes
